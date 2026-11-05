@@ -17,6 +17,14 @@ ocultos são abertos pelo navegador de setup do próprio firmware.
 >   **CH341A** antes de começar.
 > - Sem garantia. Use por sua conta e risco. Projeto independente, sem relação com Samsung, Intel ou AMI.
 
+> ### ⚖️ Isenção de responsabilidade
+> Este repositório é **apenas documentação de um experimento pessoal**, publicado para fins educacionais.
+> **O autor não se responsabiliza** por qualquer dano, perda de dados, notebook inutilizado (*brick*), perda de
+> garantia, instabilidade, superaquecimento, desgaste de hardware ou qualquer outro prejuízo, direto ou indireto,
+> decorrente do uso destas informações, scripts ou programas. **Tudo o que você fizer com base neste material é
+> por sua conta e risco.** Alterar a BIOS/NVRAM, a tensão e os limites de potência pode danificar o equipamento e
+> anular a garantia do fabricante. Se não tiver certeza do que está fazendo, não faça.
+
 ---
 
 ## Resultado em uma tabela
@@ -174,4 +182,5 @@ Windows na tabela MSDM), o firmware da Samsung (copyright) e binários de tercei
 
 ## Licença
 
-Código: MIT (veja `LICENSE`). Documentação: CC BY 4.0.
+Código: MIT (veja `LICENSE`), fornecido "NO ESTADO EM QUE SE ENCONTRA", sem garantia de nenhum tipo.
+Documentação: CC BY 4.0. Uso por sua conta e risco; veja a [isenção de responsabilidade](#️-isenção-de-responsabilidade).

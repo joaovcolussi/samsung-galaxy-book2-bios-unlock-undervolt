@@ -17,6 +17,14 @@ Shell, and the hidden menus are opened through the firmware's own setup browser.
 >   before you start.
 > - No warranty. Use at your own risk. Independent project, not affiliated with Samsung, Intel or AMI.
 
+> ### ⚖️ Disclaimer
+> This repository is **documentation of a personal experiment only**, published for educational purposes.
+> **The author accepts no responsibility or liability** for any damage, data loss, bricked laptop, voided warranty,
+> instability, overheating, hardware wear or any other direct or indirect harm resulting from the use of this
+> information, these scripts or programs. **Anything you do based on this material is entirely at your own risk.**
+> Changing BIOS/NVRAM settings, voltages and power limits can damage your hardware and void the manufacturer's
+> warranty. If you are not sure what you are doing, don't do it.
+
 ---
 
 ## Results at a glance
@@ -173,4 +181,5 @@ key in the MSDM table), Samsung firmware (copyrighted) and third-party binaries 
 
 ## License
 
-Code: MIT (see `LICENSE`). Documentation: CC BY 4.0.
+Code: MIT (see `LICENSE`), provided "AS IS", without warranty of any kind. Documentation: CC BY 4.0.
+Use at your own risk; see the [disclaimer](#️-disclaimer).
