@@ -1,0 +1,25 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104200325
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\32_etapa3b_log.txt
+Inicio: 11/04/2026 20:04:06  Samsung modo=3  Tomada=True
+
+=== Fase desempenho_single  11/04/2026 20:04:31  Samsung modo apos trocar plano=3
+
+    modo no fim=3
+

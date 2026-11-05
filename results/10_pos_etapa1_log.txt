@@ -1,0 +1,129 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104162100
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\10_pos_etapa1_log.txt
+Inicio: 11/04/2026 16:21:00
+--- Logs da gravacao (UEFI Shell)
+
+
+== e1_antes.txt
+CpuSetup:0x10E=0x01
+CpuSetup:0x13=0x01
+CpuSetup:0x17(4)=0x00004E20
+CpuSetup:0x1E(4)=0x00000000
+CpuSetup:0x5B(4)=0x00004E20
+CpuSetup:0x5F(4)=0x0000ABE0
+Setup:0x6D2=0x01
+== e1_depois.txt
+CpuSetup:0x10E=0x00
+CpuSetup:0x13=0x02
+CpuSetup:0x17(4)=0x000061A8
+CpuSetup:0x1E(4)=0x0000C738
+CpuSetup:0x5B(4)=0x000061A8
+CpuSetup:0x5F(4)=0x0000C738
+Setup:0x6D2=0x00
+== e1_ok.txt
+gravacao concluida
+== e1_ERRO.txt
+(nao existe)
+--- Dispositivos DTT (com 0x6D2=0 devem sumir)
+
+FriendlyName                                                 Status
+------------                                                 ------
+Intel(R) Innovation Platform Framework Processor Participant Error
+Tomada: True
+--- Limites logo apos boot (esperado 25/51)
+16:23:45 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+16:23:47 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+16:23:49 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+16:23:51 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+16:23:53 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+
+=== Plano desempenho ativo 11/04/2026 16:23:55
+--- Multi-core 300 s
+    0s idle    5.1W  54C max 45C clk   31 P0 4090 E 3491 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+   15s carga  20.1W  72C max 77C clk 1200 P0 3491 E 2195 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 1   85.9GF
+   30s carga  19.1W  72C max 72C clk 1183 P0 2195 E 1696 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 1  103.1GF
+   45s carga  19.0W  83C max 88C clk 1068 P0 4090 E 3192 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 1  103.1GF
+   60s carga  19.4W  81C max 78C clk 1098 P0 2195 E 1696 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 1  103.1GF
+   75s carga  18.9W  81C max 82C clk 1089 P0 2793 E 2195 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1   85.9GF
+   90s carga  18.3W  81C max 81C clk 1041 P0 2793 E 2195 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 1  103.1GF
+  105s carga  19.1W  81C max 81C clk 1062 P0 3491 E 2693 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 1  103.1GF
+  120s carga  18.3W  79C max 79C clk 1028 P0 3491 E 2195 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 1   68.7GF
+  135s carga  18.3W  87C max 82C clk 1074 P0 2793 E 2294 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1  103.1GF
+  151s carga  19.3W  78C max 77C clk 1107 P0 2195 E 1696 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1   85.9GF
+  166s carga  19.6W  78C max 77C clk 1240 P0 2195 E 1696 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1  103.1GF
+  181s carga  19.3W  83C max 83C clk 1070 P0 2793 E 2195 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 1   85.9GF
+  196s carga  19.0W  82C max 90C clk 1052 P0 3491 E 1696 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1  103.1GF
+  211s carga  19.2W  83C max 90C clk 1101 P0 4190 E 3192 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1  103.1GF
+  226s carga  19.9W  88C max 83C clk 1123 P0 4090 E 1197 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1  103.1GF
+  241s carga  19.0W  81C max 81C clk 1079 P0 2195 E 1596 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1  103.1GF
+  256s carga  19.2W  83C max 93C clk 1072 P0 4090 E 3192 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1  103.1GF
+  271s carga  18.7W  88C max 78C clk 1013 P0 2195 E 1696 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1  103.1GF
+  285s carga  18.2W  79C max 84C clk 1083 P0 2793 E 2195 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1  103.1GF
+  300s carga  18.9W  88C max 90C clk 1088 P0 3491 E 2693 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1   85.9GF
+  315s resfr   9.4W  69C max 58C clk   32 P0 4090 E 3491 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+  330s resfr   5.9W  63C max 54C clk   88 P0 4689 E 3491 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+  345s resfr   5.3W  61C max 50C clk   29 P0 4090 E 3491 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+  360s resfr   5.2W  60C max 49C clk   43 P0 4689 E 3491 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+== RESUMO
+30s iniciais: 18.2 W, 72 C, clk 1072 MHz
+90s finais  : 19.0 W, 83 C (max 95), clk 1064 MHz, GFLOPS 95.9
+PL1 dinamico min/max na carga: 25/25
+
+=== Plano equilibrado ativo 11/04/2026 16:30:37
+--- Multi-core 300 s
+    0s idle    5.4W  53C max 46C clk   80 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+   15s carga  13.2W  73C max 74C clk 1844 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  137.4GF
+   30s carga  19.8W  81C max 81C clk 1832 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+   45s carga  20.0W  86C max 86C clk 1899 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  103.1GF
+   60s carga  20.1W  87C max 84C clk 1874 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+   75s carga  20.1W  86C max 86C clk 1803 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+   90s carga  20.0W  88C max 88C clk 1844 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  105s carga  20.3W  90C max 90C clk 1907 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  120s carga  20.2W  88C max 87C clk 1944 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  135s carga  20.0W  88C max 87C clk 1807 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  150s carga  20.0W  90C max 90C clk 1841 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  165s carga  20.4W  88C max 90C clk 1962 P0 2294 E 1795 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  180s carga  20.4W  90C max 91C clk 1888 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  195s carga  20.3W  82C max 86C clk 1796 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  210s carga  19.2W  86C max 88C clk 1948 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  103.1GF
+  225s carga  20.1W  90C max 88C clk 1857 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  240s carga  20.2W  86C max 86C clk 1865 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  255s carga  20.0W  90C max 90C clk 1840 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  270s carga  20.0W  88C max 88C clk 1842 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  103.1GF
+  285s carga  20.7W  90C max 92C clk 1962 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  300s carga  20.3W  90C max 90C clk 1851 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  137.4GF
+  315s resfr   9.2W  67C max 63C clk   74 P0  798 E  898 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+  330s resfr   4.4W  60C max 54C clk   25 P0  798 E  898 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+  346s resfr   4.4W  57C max 50C clk   30 P0  698 E  898 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+  361s resfr   4.3W  56C max 49C clk   77 P0  798 E 1696 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+== RESUMO
+30s iniciais: 17.4 W, 76 C, clk 1661 MHz
+90s finais  : 20.2 W, 89 C (max 92), clk 1856 MHz, GFLOPS 121.0
+PL1 dinamico min/max na carga: 25/25
+
+--- Limites ao final
+16:37:18 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+16:37:20 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+16:37:22 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+FIM: 11/04/2026 16:37:24
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20261104163725
+**********************

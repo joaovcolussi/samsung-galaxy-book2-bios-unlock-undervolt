@@ -1,0 +1,253 @@
+ifr;form;titulo;alcance(oculto?)
+Setup.efi.0.0.en-US.uefi;0x2710;Setup;nao
+Setup.efi.0.0.en-US.uefi;0x2711;Main;nao
+Setup.efi.0.0.en-US.uefi;0x2712;Advanced;nao
+Setup.efi.0.0.en-US.uefi;0x2713;Samsung Debug Option;nao
+Setup.efi.0.0.en-US.uefi;0x2721;RC ACPI Settings;nao
+Setup.efi.0.0.en-US.uefi;0x2722;PEP Constraints Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2725;Connectivity Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2726;WWAN Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2754;CPU Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2755;Efficient-core Information;nao
+Setup.efi.0.0.en-US.uefi;0x2756;Performance-core Information;nao
+Setup.efi.0.0.en-US.uefi;0x2757;BIOS Guard;nao
+Setup.efi.0.0.en-US.uefi;0x2758;CPU SMM Enhancement;?
+Setup.efi.0.0.en-US.uefi;0x2759;Power & Performance;nao
+Setup.efi.0.0.en-US.uefi;0x275A;CPU - Power Management Control;nao
+Setup.efi.0.0.en-US.uefi;0x275B;Custom P-state Table;nao
+Setup.efi.0.0.en-US.uefi;0x275C;Turbo Ratio Limit Options;nao
+Setup.efi.0.0.en-US.uefi;0x275D;  View/Configure Turbo Options;nao
+Setup.efi.0.0.en-US.uefi;0x275E;CPU VR Settings;nao
+Setup.efi.0.0.en-US.uefi;0x275F;Acoustic Noise Settings;nao
+Setup.efi.0.0.en-US.uefi;0x2760;Core/IA VR Settings;?
+Setup.efi.0.0.en-US.uefi;0x2761;GT VR Settings;?
+Setup.efi.0.0.en-US.uefi;0x2762;SA VR Settings;?
+Setup.efi.0.0.en-US.uefi;0x2763;RFI Settings;?
+Setup.efi.0.0.en-US.uefi;0x2764;Power Limit 3 Settings;nao
+Setup.efi.0.0.en-US.uefi;0x2765;  Config TDP Configurations;?
+Setup.efi.0.0.en-US.uefi;0x2766;  View/Configure CPU Lock Options;nao
+Setup.efi.0.0.en-US.uefi;0x27D7;PCH-FW Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27D9;PTT Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27DB;Firmware Update Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27DC;Unique Platform Id Configuration;SIM
+Setup.efi.0.0.en-US.uefi;0x27DD;ME Debug Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27DF;FIPS Mode;nao
+Setup.efi.0.0.en-US.uefi;0x27E0;Anti-Rollback SVN Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27E6;Thermal Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27E7;Cpu Thermal Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27E8;Platform Thermal Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27E9;Intel(R) Dynamic Tuning Technology Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27EA;OEM variable and Object;nao
+Setup.efi.0.0.en-US.uefi;0x27EB;Platform Settings;nao
+Setup.efi.0.0.en-US.uefi;0x27EC;ACPI D3Cold settings;nao
+Setup.efi.0.0.en-US.uefi;0x27ED;VTIO;nao
+Setup.efi.0.0.en-US.uefi;0x27F0;TCSS Platform Setting;nao
+Setup.efi.0.0.en-US.uefi;0x27F8;OverClocking Performance Menu;nao
+Setup.efi.0.0.en-US.uefi;0x27F9;Processor;SIM
+Setup.efi.0.0.en-US.uefi;0x27FB;E-core L2 Configurations;SIM
+Setup.efi.0.0.en-US.uefi;0x27FC;Ring;SIM
+Setup.efi.0.0.en-US.uefi;0x27FD;GT;SIM
+Setup.efi.0.0.en-US.uefi;0x27FE;Uncore;SIM
+Setup.efi.0.0.en-US.uefi;0x27FF;Platform Voltage Overrides;SIM
+Setup.efi.0.0.en-US.uefi;0x2800;Voltage PLL Trim Controls;SIM
+Setup.efi.0.0.en-US.uefi;0x2801;CEP Disable;SIM
+Setup.efi.0.0.en-US.uefi;0x2802;VR ICCMAX Current Override;SIM
+Setup.efi.0.0.en-US.uefi;0x2803;  Processor Disable;SIM
+Setup.efi.0.0.en-US.uefi;0x2805;AMT Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2807;ASF Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2808;Secure Erase Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2809;One Click Recovery(OCR) Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x280A;Remote Platform Erase Configuration;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x280C;BCLK Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2815;Thunderbolt(TM) Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2816;Integrated Thunderbolt(TM) Configuration;SIM
+Setup.efi.0.0.en-US.uefi;0x2817; ITBT Root Port 0 Configuration;SIM
+Setup.efi.0.0.en-US.uefi;0x2818; ITBT Root Port 1 Configuration;SIM
+Setup.efi.0.0.en-US.uefi;0x2819; ITBT Root Port 2 Configuration;SIM
+Setup.efi.0.0.en-US.uefi;0x281A; ITBT Root Port 3 Configuration;SIM
+Setup.efi.0.0.en-US.uefi;0x2820;Debug Settings;nao
+Setup.efi.0.0.en-US.uefi;0x2821;VT-d Debug Settings;nao
+Setup.efi.0.0.en-US.uefi;0x2822;Advanced Debug Settings;nao
+Setup.efi.0.0.en-US.uefi;0x2824;Debug Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2826;Trusted Computing;SIM
+Setup.efi.0.0.en-US.uefi;0x2827;Trusted Computing;SIM
+Setup.efi.0.0.en-US.uefi;0x2828;Trusted Computing;nao
+Setup.efi.0.0.en-US.uefi;0x2829;ACPI Settings;nao
+Setup.efi.0.0.en-US.uefi;0x2847;UEFI Variables Protection;nao
+Setup.efi.0.0.en-US.uefi;0x284B;Intel TXT Information;nao
+Setup.efi.0.0.en-US.uefi;0x284F;AMI Graphic Output Protocol Policy;?
+Setup.efi.0.0.en-US.uefi;0x285E;USB Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2861;Network Stack Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2865;NVMe Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2A77;Driver Health;?
+Setup.efi.0.0.en-US.uefi;0x2A78;Driver Health;?
+Setup.efi.0.0.en-US.uefi;0x2714;Chipset;nao
+Setup.efi.0.0.en-US.uefi;0x2792;PCI Express Root Port 0;SIM
+Setup.efi.0.0.en-US.uefi;0x2793;PCI Express Root Port 1;SIM
+Setup.efi.0.0.en-US.uefi;0x2794;PCI Express Root Port 2;SIM
+Setup.efi.0.0.en-US.uefi;0x2795;PCI Express Root Port 3;SIM
+Setup.efi.0.0.en-US.uefi;0x2796;Memory Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2797;System Agent (SA) Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2798;Memory Overclocking Menu;?
+Setup.efi.0.0.en-US.uefi;0x2799;Graphics Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x279A;DMI/OPI Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x279B; Gen3 Root Port Preset value for each Lane;?
+Setup.efi.0.0.en-US.uefi;0x279C; Gen3 Endpoint Preset value for each Lane;?
+Setup.efi.0.0.en-US.uefi;0x279D; Gen3 Endpoint Hint value for each Lane;?
+Setup.efi.0.0.en-US.uefi;0x279E;Gen3 RxCTLE Control;?
+Setup.efi.0.0.en-US.uefi;0x279F;DMI Advanced Menu;nao
+Setup.efi.0.0.en-US.uefi;0x27A0;LCD Control;?
+Setup.efi.0.0.en-US.uefi;0x27A1;Intel(R) Ultrabook Event Support;?
+Setup.efi.0.0.en-US.uefi;0x27A2;GT - Power Management Control;nao
+Setup.efi.0.0.en-US.uefi;0x27A3;Memory Training Algorithms;nao
+Setup.efi.0.0.en-US.uefi;0x27A4;SA TCSS USB Configuration;SIM
+Setup.efi.0.0.en-US.uefi;0x27A5;Memory Thermal Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27A6;Memory Power and Thermal Throttling;nao
+Setup.efi.0.0.en-US.uefi;0x27A7;MIPI Camera Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x8D;Link0 options;SIM
+Setup.efi.0.0.en-US.uefi;0x8E;Link1 options;SIM
+Setup.efi.0.0.en-US.uefi;0x8F;Link2 options;SIM
+Setup.efi.0.0.en-US.uefi;0x90;Link3 options;SIM
+Setup.efi.0.0.en-US.uefi;0x91;Link4 options;SIM
+Setup.efi.0.0.en-US.uefi;0x92;Link5 options;SIM
+Setup.efi.0.0.en-US.uefi;0x93;Control Logic options;SIM
+Setup.efi.0.0.en-US.uefi;0x94;Control Logic options;SIM
+Setup.efi.0.0.en-US.uefi;0x95;Control Logic options;SIM
+Setup.efi.0.0.en-US.uefi;0x96;Control Logic options;SIM
+Setup.efi.0.0.en-US.uefi;0x97;Control Logic options;SIM
+Setup.efi.0.0.en-US.uefi;0x98;Control Logic options;SIM
+Setup.efi.0.0.en-US.uefi;0x27A8;Flash Options;SIM
+Setup.efi.0.0.en-US.uefi;0x27A9;Flash Options;SIM
+Setup.efi.0.0.en-US.uefi;0x27AA;Flash Options;SIM
+Setup.efi.0.0.en-US.uefi;0x27AB;Flash Options;SIM
+Setup.efi.0.0.en-US.uefi;0x27AC;Flash Options;SIM
+Setup.efi.0.0.en-US.uefi;0x27AD;Flash Options;SIM
+Setup.efi.0.0.en-US.uefi;0x27AE;TCSS setup menu;nao
+Setup.efi.0.0.en-US.uefi;0x27AF;VMD setup menu;nao
+Setup.efi.0.0.en-US.uefi;0x27B0;Display setup menu;nao
+Setup.efi.0.0.en-US.uefi;0x27B1;PCI Express Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27B2;PCI Express Root Port 1;?
+Setup.efi.0.0.en-US.uefi;0x27B3;PCI Express Root Port 2;?
+Setup.efi.0.0.en-US.uefi;0x27B4;PCI Express Root Port 3;?
+Setup.efi.0.0.en-US.uefi;0x27B6;PCIE Configuration;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x27B7;IMR Configuration;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x27BF;PCH-IO Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27C0;PCI Express Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27C1;USB Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27C2;SATA Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27C3;PCIe EQ settings;nao
+Setup.efi.0.0.en-US.uefi;0x157C;PCI Express Root Port 1;?
+Setup.efi.0.0.en-US.uefi;0x1034;PCI Express Root Port 2;?
+Setup.efi.0.0.en-US.uefi;0x1035;PCI Express Root Port 3;?
+Setup.efi.0.0.en-US.uefi;0x1036;PCI Express Root Port 4;?
+Setup.efi.0.0.en-US.uefi;0x1037;PCI Express Root Port 5;?
+Setup.efi.0.0.en-US.uefi;0x1038;PCI Express Root Port 6;?
+Setup.efi.0.0.en-US.uefi;0x1039;PCI Express Root Port 7;?
+Setup.efi.0.0.en-US.uefi;0x103A;PCI Express Root Port 8;?
+Setup.efi.0.0.en-US.uefi;0x103B;PCI Express Root Port 9;?
+Setup.efi.0.0.en-US.uefi;0x13ED;PCI Express Root Port 10;?
+Setup.efi.0.0.en-US.uefi;0x13EE;PCI Express Root Port 11;?
+Setup.efi.0.0.en-US.uefi;0x13EF;PCI Express Root Port 12;?
+Setup.efi.0.0.en-US.uefi;0x13F0;PCI Express Root Port 13;?
+Setup.efi.0.0.en-US.uefi;0x13F1;PCI Express Root Port 14;?
+Setup.efi.0.0.en-US.uefi;0x13F2;PCI Express Root Port 15;?
+Setup.efi.0.0.en-US.uefi;0x13F3;PCI Express Root Port 16;?
+Setup.efi.0.0.en-US.uefi;0x13F4;PCI Express Root Port 17;?
+Setup.efi.0.0.en-US.uefi;0x13F5;PCI Express Root Port 18;?
+Setup.efi.0.0.en-US.uefi;0x13F6;PCI Express Root Port 19;?
+Setup.efi.0.0.en-US.uefi;0x13F7;PCI Express Root Port 20;?
+Setup.efi.0.0.en-US.uefi;0x13F8;PCI Express Root Port 21;?
+Setup.efi.0.0.en-US.uefi;0x157D;PCI Express Root Port 22;?
+Setup.efi.0.0.en-US.uefi;0x157E;PCI Express Root Port 23;?
+Setup.efi.0.0.en-US.uefi;0x157F;PCI Express Root Port 24;?
+Setup.efi.0.0.en-US.uefi;0x1587;PCI Express Root Port 25;?
+Setup.efi.0.0.en-US.uefi;0x1588;PCI Express Root Port 26;?
+Setup.efi.0.0.en-US.uefi;0x1589;PCI Express Root Port 27;?
+Setup.efi.0.0.en-US.uefi;0x158A;PCI Express Root Port 28;?
+Setup.efi.0.0.en-US.uefi;0x27C4;PCIE clocks;nao
+Setup.efi.0.0.en-US.uefi;0x27C5;THC Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27C6;HD Audio Configuration;?
+Setup.efi.0.0.en-US.uefi;0x27C7;HD Audio Advanced Configuration;?
+Setup.efi.0.0.en-US.uefi;0x27C8;HD Audio DSP Features Configuration;?
+Setup.efi.0.0.en-US.uefi;0x27C9;Security Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x7A;SerialIo Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x80;Serial IO I2C0 Settings;nao
+Setup.efi.0.0.en-US.uefi;0x81;Serial IO I2C1 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x87;Serial IO I2C2 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x88;Serial IO I2C3 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x89;Serial IO I2C4 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x8A;Serial IO I2C5 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x99;Serial IO I2C6 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x9A;Serial IO I2C7 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x82;Serial IO SPI0 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x83;Serial IO SPI1 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x8C;Serial IO SPI2 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x84;Serial IO UART0 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x85;Serial IO UART1 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x8B;Serial IO UART2 Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x27CA;SCS Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27CB;ISH Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27CC;Pch Thermal Throttling Control;nao
+Setup.efi.0.0.en-US.uefi;0x27CD;Serial IO Touch Pad Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x27CE;Serial IO Touch Panel Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x27CF;Serial IO Finger Print Settings;SIM
+Setup.efi.0.0.en-US.uefi;0x27D0;FIVR Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27D1;PMC Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x27D2;PMC ADR Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x282A;SB Porting Configuration;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x282B;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x282C;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x282D;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x282E;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x282F;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2830;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2831;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2832;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2833;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2834;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2835;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2836;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2837;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2838;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2839;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x283A;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x283B;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x283C;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x283D;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x283E;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x283F;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2840;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2841;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2842;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2843;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2844;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2845;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2846;Extra options ;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2849;PEG Port Feature Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x284A;External Gfx Card Primary Display Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2715;Security;nao
+Setup.efi.0.0.en-US.uefi;0x2863;HDD Password;?
+Setup.efi.0.0.en-US.uefi;0x286E;Secure Boot;nao
+Setup.efi.0.0.en-US.uefi;0x2877;Key Management;nao
+Setup.efi.0.0.en-US.uefi;0x296E;TCG Storage device Security Configuration;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x296F;TCG Storage device Security Configuration;SIM(sem Ref)
+Setup.efi.0.0.en-US.uefi;0x2716;Boot;nao
+Setup.efi.0.0.en-US.uefi;0x2717;Save & Exit;nao
+Setup.efi.0.0.en-US.uefi;0x2718;SysInfo;nao
+Setup.efi.0.0.en-US.uefi;0x2719;Advanced;nao
+Setup.efi.0.0.en-US.uefi;0x271A;Security;nao
+Setup.efi.0.0.en-US.uefi;0x2A5D;TPM Configuration;SIM
+Setup.efi.0.0.en-US.uefi;0x2A5E;TPM Configuration;nao
+Setup.efi.0.0.en-US.uefi;0x2A5F;Key Management;SIM
+Setup.efi.0.0.en-US.uefi;0x2A63;PK Management;SIM
+Setup.efi.0.0.en-US.uefi;0x2A66;KEK Management;SIM
+Setup.efi.0.0.en-US.uefi;0x2A6A;DB Management;SIM
+Setup.efi.0.0.en-US.uefi;0x2A6E;DBX Management;SIM
+Setup.efi.0.0.en-US.uefi;0x271B;Boot;nao
+Setup.efi.0.0.en-US.uefi;0x2A72;;nao
+Setup.efi.0.0.en-US.uefi;0x271C;Exit;nao
+m.efi.0.0.en-US.uefi.ifr;0x1;PCI Subsystem Settings;nao
+m.efi.0.0.en-US.uefi.ifr;0x2;PCI Device Settings;SIM(sem Ref)
+m.efi.0.0.en-US.uefi.ifr;0x3;PCI Express GEN 1 Settings;SIM(sem Ref)
+m.efi.0.0.en-US.uefi.ifr;0x4;PCI Express GEN 2 Settings;SIM(sem Ref)
+m.efi.0.0.en-US.uefi.ifr;0x5;PCI Hot-Plug Settings;SIM(sem Ref)

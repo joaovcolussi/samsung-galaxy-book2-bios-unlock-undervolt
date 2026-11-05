@@ -1,0 +1,163 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104175559
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104180309
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\23_etapa2e_log.txt
+Inicio: 11/04/2026 18:03:09
+--- Logs da gravacao da Etapa 2e (UEFI Shell)
+
+
+== e2e_antes.txt
+CpuSetup:0x12D=0x01
+CpuSetup:0x132(2)=0x00A0
+CpuSetup:0x13C(2)=0x0118
+CpuSetup:0x134(2)=0x0140
+CpuSetup:0x13E(2)=0x0140
+CpuSetup:0x1E0(2)=0x0000
+CpuSetup:0x1E2=0x00
+CpuSetup:0x1EC(2)=0x0000
+CpuSetup:0x1EE=0x00
+== e2e_depois.txt
+CpuSetup:0x12D=0x01
+CpuSetup:0x132(2)=0x008C
+CpuSetup:0x13C(2)=0x0118
+CpuSetup:0x134(2)=0x0140
+CpuSetup:0x13E(2)=0x0140
+CpuSetup:0x1E0(2)=0x0000
+CpuSetup:0x1E2=0x00
+CpuSetup:0x1EC(2)=0x0000
+CpuSetup:0x1EE=0x00
+== e2e_ok.txt
+gravacao concluida
+== e2e_ERRO.txt
+(nao existe)
+== e2e_info_antes.txt
+==== biosmod.efi v1 - diagnostico (somente leitura) ====
+CPU: 12th Gen Intel(R) Core(TM) i7-1255U
+CPUID(1).EAX = 0x000906A4
+Microcode rev = 0x00000423
+
+--- Boot Guard ---
+MSR 0x13A BOOT_GUARD_SACM_INFO = 0x000000130000007F
+    NEM habilitado (ACM rodou) = 1
+    Measured Boot = 1
+    Verified Boot = 1
+    Revogacao = 0
+    Capacidade Boot Guard (bit32) = 1
+  => VERIFIED BOOT ATIVO: flash de BIOS modificada = nao liga.
+
+--- Travas ---
+MSR 0x194 FLEX_RATIO = 0x0000000000010000
+    OC Lock (bit20) = 0
+MSR 0x0E2 PKG_CST_CONFIG_CONTROL = 0x0000000074000008
+    CFG Lock (bit15) = 0
+    Package C-state limit (bits3:0) = 8
+
+--- Energia (RAPL) ---
+MSR 0x606 RAPL_POWER_UNIT = 0x00000000000A0E03
+MSR 0x610 PKG_POWER_LIMIT (MSR) = 0x0042819800DD80C8
+    PL1: 25.000 W  enable=1 clamp=1  janela=28.000 s
+    PL2: 51.000 W  enable=1 clamp=0  janela=0.002 s
+    Lock (bit63) = 0
+MSR 0x614 PKG_POWER_INFO = 0x0000000000000078
+    TDP (SKU) = 15.000 W
+MSR 0x615 PL3_CONTROL = 0x00000000840C81A0
+    PL3: 52.000 W  enable=1 clamp=0  janela=0.062 s
+    Lock (bit31) = 1
+MSR 0x601 VR_CURRENT_CONFIG (PL4) = 0x00000000000003D8
+    PL4 (bits12:0, 1/8) = 123.000  lock bit31=0
+MSR 0x65C PLATFORM_POWER_LIMIT (Psys) = 0x0000000000DD0000
+    Psys PL1: 0.000 W  enable=0 clamp=1  janela=28.000 s
+    Psys PL2: 0.000 W  enable=0 clamp=0  janela=0.000 s
+    Lock (bit63) = 0
+MSR 0x648 CONFIG_TDP_NOMINAL = 0x0000000000000011
+MSR 0x649 CONFIG_TDP_LEVEL1 = 0x00000000000B0060
+MSR 0x64A CONFIG_TDP_LEVEL2 = 0x00000000001A00E0
+MSR 0x64B CONFIG_TDP_CONTROL = 0x0000000000000000
+    nivel cTDP = 0  lock bit31=0
+MSR 0x64C TURBO_ACTIVATION_RATIO = 0x0000000000000010
+MSR 0x1FC POWER_CTL = 0x0000000000E4005B
+    EE Turbo disable (bit19) = 0
+    BD PROCHOT (bit0) = 1
+
+--- MMIO (MCHBAR) ---
+MCHBAR reg = 0x00000000FEDC0001
+MMIO 0x59A0 PKG_RAPL_LIMIT = 0x0042819800DD80C8
+    PL1 (MMIO): 25.000 W  enable=1 clamp=1  janela=28.000 s
+    PL2 (MMIO): 51.000 W  enable=1 clamp=0  janela=0.002 s
+    Lock (bit63) = 0
+
+--- Termico ---
+MSR 0x1A2 TEMPERATURE_TARGET = 0x0000000086640000
+    TjMax = 100 C   offset = 6 C   => TCC ativa em 94 C
+    Lock TCC offset (bit31) = 1
+
+--- Turbo / HWP ---
+MSR 0x1AD TURBO_RATIO_LIMIT = 0x292929292929292F
+MSR 0x1AE TURBO_RATIO_LIMIT_CORES = 0x0807060504030201
+MSR 0x770 PM_ENABLE (HWP) = 0x0000000000000000
+MSR 0x64F CORE_PERF_LIMIT_REASONS = 0x0000000010001000
+
+--- Tensoes (OC mailbox, leitura) ---
+    (offset em mV; requer OC Lock=0 para ALTERAR, leitura costuma funcionar)
+    plano 0 (IA / P-cores): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 1 (GT / iGPU): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 2 (Ring / cache / E-cores): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 3 (System Agent): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 4 (Analog I/O): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+
+==== fim ====
+--- Hypervisor neste boot: True
+Tomada: True
+--- Offsets lidos pelo HWiNFO (offsets devem ser 0; o ganho aparece no VID sob carga)
+
+--- PL (esperado 25/51)
+
+=== Fase equilibrado_multi  11/04/2026 18:05:19
+
+
+=== Fase desempenho_single  11/04/2026 18:11:31
+
+
+=== Fase desempenho_multi  11/04/2026 18:14:12
+
+
+
+--- Erros WHEA (instabilidade de tensao aparece aqui) desde o boot:
+FIM: todas as fases concluidas com AC LL 1,40  11/04/2026 18:20:23
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20261104182025
+**********************

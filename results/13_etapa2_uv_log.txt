@@ -1,0 +1,68 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104164553
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\13_etapa2_uv_log.txt
+Inicio: 11/04/2026 16:45:54
+--- Leitura pre-SO (UEFI Shell) apos Etapa 1
+
+
+
+Microcode rev = 0x00000423
+    OC Lock (bit20) = 0
+    (offset em mV; requer OC Lock=0 para ALTERAR, leitura costuma funcionar)
+    plano 0 (IA / P-cores): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 1 (GT / iGPU): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 2 (Ring / cache / E-cores): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 3 (System Agent): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 4 (Analog I/O): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+--- Hypervisor neste boot: False
+VBS status: 0
+Tomada: True
+
+--- Referencia 0 mV (120 s)
+    0s idle    5.2W  59C max 59C clk  137 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+   15s carga  15.4W  73C max 69C clk 1815 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  137.4GF
+   30s carga  19.7W  79C max 81C clk 1840 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+   45s carga  20.3W  84C max 84C clk 1920 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  137.4GF
+   60s carga  20.0W  84C max 79C clk 1806 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+   75s carga  20.0W  83C max 87C clk 1808 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  137.4GF
+   90s carga  20.0W  86C max 87C clk 1845 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  105s carga  19.9W  86C max 88C clk 1797 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  120s carga  20.2W  88C max 86C clk 1836 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  120.3GF
+  135s resfr   4.7W  63C max 59C clk   22 P0 1197 E  998 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+== RESUMO
+30s iniciais: 16.9 W, 75 C, clk 1655 MHz
+90s finais  : 20.0 W, 85 C (max 88), clk 1857 MHz, GFLOPS 122.0
+PL1 dinamico min/max na carga: 25/25
+=== Passo -50 mV  11/04/2026 16:50:30
+-50 mV -> 0xF9A00000
+IA Voltage Offset = 0.0 mV
+GT Voltage Offset = 0.0 mV
+CLR (CBo/LLC/Ring) Voltage Offset = 0.0 mV
+GT Media Voltage Offset = 0.0 mV
+SA Voltage Offset = 0.0 mV
+L2 E-core Voltage Offset = 0.0 mV
+NAO APLICOU: IA offset lido = 0 mV (esperado -50)
+Ultimo passo estavel (120 s FMA): 0 mV
+FIM: maior offset estavel no teste curto = 0 mV  11/04/2026 16:50:51
+0 mV -> 0x00000000
+A operação foi concluída com êxito.
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20261104165056
+**********************

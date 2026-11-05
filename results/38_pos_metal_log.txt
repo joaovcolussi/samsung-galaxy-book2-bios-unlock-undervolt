@@ -1,0 +1,39 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104210143
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\38_pos_metal_log.txt
+Inicio: 11/04/2026 21:01:43  Samsung modo=3  Tomada=True  Boot=11/04/2026 20:59:26
+--- Carga de fundo antes de comecar (GPU deve estar ~0%):
+
+--- PL (esperado 25/51 = NVRAM intacta)
+
+
+=== Fase desempenho_single  11/04/2026 21:02:45  Samsung modo=3
+
+
+=== Fase equilibrado_multi  11/04/2026 21:05:32  Samsung modo=3
+
+
+=== Fase gpu  11/04/2026 21:11:48  Samsung modo=3
+
+--- WHEA / Display 4101 desde o boot:
+FIM 11/04/2026 21:17:13  modo=3
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20261104211713
+**********************

@@ -1,0 +1,80 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104202821
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\36_etapa3c_log.txt
+Inicio: 11/04/2026 20:28:23
+--- Logs da gravacao (UEFI Shell)
+
+
+== e3c_antes.txt
+Setup:0xC4F=0x02
+Setup:0xC50(4)=0x00000000
+CpuSetup:0x1D5=0x00
+CpuSetup:0x12E=0x01
+CpuSetup:0x134(2)=0x00C8
+CpuSetup:0x13E(2)=0x0140
+CpuSetup:0x132(2)=0x008C
+CpuSetup:0x13C(2)=0x0118
+== e3c_depois.txt
+Setup:0xC4F=0x02
+Setup:0xC50(4)=0x00000000
+CpuSetup:0x1D5=0x00
+CpuSetup:0x12E=0x01
+CpuSetup:0x134(2)=0x00B9
+CpuSetup:0x13E(2)=0x0140
+CpuSetup:0x132(2)=0x008C
+CpuSetup:0x13C(2)=0x0118
+== e3c_ok.txt
+gravacao concluida
+== e3c_ERRO.txt
+(nao existe)
+--- Samsung modo=3 (3=Alto desempenho)  Tomada=True
+
+=== Fase gpu (WebGL 1500 it, 300 s, Equilibrado)  11/04/2026 20:30:34  modo=3
+   0s                    iGPU   4.5W GT   0.0W VID 0.222   300MHz uso    0% pkg   4.7W  52C
+  15s GPU 23.23 fps      iGPU  21.1W GT  15.9W VID 0.395  1250MHz uso   97% pkg  21.8W  92C
+  30s GPU 23.23 fps      iGPU  20.5W GT  15.2W VID 0.395  1250MHz uso   96% pkg  20.5W  93C
+  45s GPU 23.60 fps      iGPU  19.8W GT  14.7W VID 0.395  1250MHz uso   98% pkg  20.0W  94C
+  60s GPU 23.81 fps      iGPU  19.3W GT  14.2W VID 0.382  1200MHz uso   96% pkg  19.3W  81C
+  75s GPU 23.60 fps      iGPU  19.9W GT  14.4W VID 0.382  1200MHz uso   99% pkg  19.7W  94C
+  90s GPU 24.59 fps      iGPU  19.3W GT  13.9W VID 0.382  1200MHz uso   96% pkg  19.3W  94C
+ 105s GPU 22.62 fps      iGPU  19.0W GT  13.6W VID 0.380  1200MHz uso   95% pkg  20.4W  93C
+ 120s GPU 25.00 fps      iGPU  19.2W GT  13.8W VID 0.395  1250MHz uso   97% pkg  19.4W  93C
+ 135s GPU 23.00 fps      iGPU  18.9W GT  13.7W VID 0.395  1250MHz uso   95% pkg  19.5W  93C
+ 150s GPU 24.37 fps      iGPU  19.3W GT  13.6W VID 0.382  1200MHz uso   97% pkg  19.7W  94C
+ 165s GPU 24.77 fps      iGPU  19.3W GT  13.5W VID 0.367  1150MHz uso   97% pkg  19.1W  93C
+ 180s GPU 23.23 fps      iGPU  19.1W GT  13.8W VID 0.382  1200MHz uso   96% pkg  18.9W  92C
+ 195s GPU 24.58 fps      iGPU  19.5W GT  13.8W VID 0.382  1200MHz uso   98% pkg  19.2W  93C
+ 210s GPU 24.00 fps      iGPU  19.3W GT  13.8W VID 0.395  1250MHz uso   98% pkg  19.0W  94C
+ 225s GPU 23.00 fps      iGPU  18.9W GT  13.6W VID 0.395  1250MHz uso   95% pkg  18.7W  93C
+ 240s GPU 24.20 fps      iGPU  19.1W GT  13.6W VID 0.382  1200MHz uso   96% pkg  19.0W  94C
+ 255s GPU 23.23 fps      iGPU  19.1W GT  13.6W VID 0.365  1250MHz uso   96% pkg  18.7W  93C
+ 270s GPU 24.98 fps      iGPU  19.0W GT  13.8W VID 0.365  1250MHz uso   98% pkg  19.1W  92C
+ 286s GPU 23.61 fps      iGPU  19.1W GT  13.6W VID 0.380  1200MHz uso   97% pkg  18.8W  94C
+ 301s GPU 24.00 fps      iGPU  18.9W GT  13.6W VID 0.395  1250MHz uso   95% pkg  19.0W  93C
+Edge de teste restante: 0
+== RESUMO GPU
+amostras 300/300  FPS medio 23.75  iGPU 19.43 W  GT 13.94 W  VID 0.3863 V  clk 1223 MHz  uso 96%  pkg 19.4 W  92 C
+contexto perdido (TDR): False
+--- WHEA desde o boot:
+--- Display 4101 (driver de video reiniciado) desde o boot:
+FIM: concluido (Etapa 3c)  modo=3  11/04/2026 20:36:02
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20261104203605
+**********************

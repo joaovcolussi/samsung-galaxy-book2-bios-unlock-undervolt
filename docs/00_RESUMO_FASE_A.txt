@@ -1,0 +1,18 @@
+FASE A - testes de potencia (04/11/2026, Windows, na tomada, plano "Desempenho Maximo")
+Carga: numpy matmul FP64 2048x2048 (AVX2, todos os threads), 5 min. Sensores: HWiNFO shared memory, 1 s.
+
+#  Config                                        Sustentado   Temp media  GFLOPS  Limitador
+01 Fabrica, Samsung "Otimizado"                   12.0 W       65 C        56     PL1 dinamico 12 W (DTT via MMIO)
+02 ThrottleStop 28/51 + Sync MMIO, "Otimizado"    20.5 W       93 C (96)   113    PBM PL2/PL3 (~20 W) + termico (TCC 94)
+03 Fabrica, Samsung "Alto desempenho"             13.0 W       67 C        62     DTT baixa PL1 16->13 W (sensores de carcaca)
+04 TS 28/51 + MMIO lock, "Alto desempenho"        19.7 W       87 C (96)   105    PBM PL2/PL3 (~20 W) + termico
+
+Conclusoes:
+- Quem segura o desempenho e o DTT (Intel Dynamic Tuning) escrevendo PL1 no MMIO (12 W Otimizado / 13-16 W Alto desempenho),
+  com base nos sensores de carcaca SNS1/SNS2 -- nao na temperatura da CPU. Parar o servico ipfsvc nao reverte o MMIO.
+- Removendo esse limite: ~2x desempenho multi-core (56 -> ~110 GFLOPS).
+- Teto seguinte: ~20 W "PBM PL2/PL3" (orcamento da plataforma, EC/Psys) + termico: 20 W ja leva a CPU a 87-95 C.
+  PL1 acima de ~22 W nao traz ganho sustentado. O modo "Alto desempenho" da ventoinha da ~6 C a menos que "Otimizado".
+- O maior ganho restante e UNDERVOLT (exige Overclocking Lock = 0 na BIOS).
+- HWiNFO "PL1 (Dynamic)" fica congelado depois do MMIO lock do ThrottleStop (nao confiar nele nesse caso).
+- O MMIO lock dura ate reiniciar.

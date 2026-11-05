@@ -1,0 +1,16 @@
+   0s GPU 23.61 fps      iGPU  22.1W GT  14.1W VID 0.387  1150MHz uso   97% pkg  22.1W  92C
+  15s GPU 23.23 fps      iGPU  21.0W GT  13.7W VID 0.372  1100MHz uso   98% pkg  21.1W  96C
+  30s GPU 23.23 fps      iGPU  19.7W GT  14.1W VID 0.360  1050MHz uso   98% pkg  20.4W  94C
+  45s GPU 21.64 fps      iGPU  21.4W GT  13.9W VID 0.372  1100MHz uso   97% pkg  21.1W  88C
+  60s GPU 21.64 fps      iGPU  17.8W GT  13.3W VID 0.372  1100MHz uso   94% pkg  20.6W  93C
+  75s GPU 21.90 fps      iGPU  21.8W GT  13.7W VID 0.400  1200MHz uso   98% pkg  21.9W  96C
+  90s GPU 24.00 fps      iGPU  19.1W GT  13.7W VID 0.402  1200MHz uso   97% pkg  19.2W  93C
+ 105s GPU 23.23 fps      iGPU  21.6W GT  13.8W VID 0.387  1150MHz uso   98% pkg  21.6W  94C
+ 120s GPU 22.62 fps      iGPU  19.7W GT  13.7W VID 0.402  1200MHz uso   98% pkg  20.5W  93C
+ 135s GPU 23.00 fps      iGPU  19.6W GT  13.6W VID 0.402  1200MHz uso   96% pkg  21.7W  94C
+ 150s GPU 23.00 fps      iGPU  21.7W GT  12.7W VID 0.387  1150MHz uso   93% pkg  21.4W  90C
+ 165s GPU 23.00 fps      iGPU  18.4W GT  13.3W VID 0.372  1100MHz uso   97% pkg  19.9W  94C
+ 180s GPU 23.81 fps      iGPU  20.4W GT  13.8W VID 0.387  1150MHz uso   98% pkg  19.2W  93C
+== RESUMO GPU
+amostras 180/180  FPS medio 22.32  iGPU 20.35 W  GT 13.53 W  VID 0.3859 V  clk 1148 MHz  uso 96%  pkg 20.4 W  93 C
+contexto perdido (TDR): False

@@ -1,0 +1,254 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104154903
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\05_pos_reboot_log.txt
+Inicio: 11/04/2026 15:49:04
+--- Resultados do UEFI Shell (biosmod.efi / setup_var)
+
+
+==== biosmod.efi v1 - diagnostico (somente leitura) ====
+CPU: 12th Gen Intel(R) Core(TM) i7-1255U
+CPUID(1).EAX = 0x000906A4
+Microcode rev = 0x00000423
+
+--- Boot Guard ---
+MSR 0x13A BOOT_GUARD_SACM_INFO = 0x000000130000007F
+    NEM habilitado (ACM rodou) = 1
+    Measured Boot = 1
+    Verified Boot = 1
+    Revogacao = 0
+    Capacidade Boot Guard (bit32) = 1
+  => VERIFIED BOOT ATIVO: flash de BIOS modificada = nao liga.
+
+--- Travas ---
+MSR 0x194 FLEX_RATIO = 0x0000000000110000
+    OC Lock (bit20) = 1
+MSR 0x0E2 PKG_CST_CONFIG_CONTROL = 0x0000000074000008
+    CFG Lock (bit15) = 0
+    Package C-state limit (bits3:0) = 8
+
+--- Energia (RAPL) ---
+MSR 0x606 RAPL_POWER_UNIT = 0x00000000000A0E03
+MSR 0x610 PKG_POWER_LIMIT (MSR) = 0x0042816000DD80A0
+    PL1: 20.000 W  enable=1 clamp=1  janela=28.000 s
+    PL2: 44.000 W  enable=1 clamp=0  janela=0.002 s
+    Lock (bit63) = 0
+MSR 0x614 PKG_POWER_INFO = 0x0000000000000078
+    TDP (SKU) = 15.000 W
+MSR 0x615 PL3_CONTROL = 0x00000000840C81A0
+    PL3: 52.000 W  enable=1 clamp=0  janela=0.062 s
+    Lock (bit31) = 1
+MSR 0x601 VR_CURRENT_CONFIG (PL4) = 0x00000000000003D8
+    PL4 (bits12:0, 1/8) = 123.000  lock bit31=0
+MSR 0x65C PLATFORM_POWER_LIMIT (Psys) = 0x0000000000DD0000
+    Psys PL1: 0.000 W  enable=0 clamp=1  janela=28.000 s
+    Psys PL2: 0.000 W  enable=0 clamp=0  janela=0.000 s
+    Lock (bit63) = 0
+MSR 0x648 CONFIG_TDP_NOMINAL = 0x0000000000000011
+MSR 0x649 CONFIG_TDP_LEVEL1 = 0x00000000000B0060
+MSR 0x64A CONFIG_TDP_LEVEL2 = 0x00000000001A00E0
+MSR 0x64B CONFIG_TDP_CONTROL = 0x0000000000000000
+    nivel cTDP = 0  lock bit31=0
+MSR 0x64C TURBO_ACTIVATION_RATIO = 0x0000000000000010
+MSR 0x1FC POWER_CTL = 0x0000000000E4005B
+    EE Turbo disable (bit19) = 0
+    BD PROCHOT (bit0) = 1
+
+--- MMIO (MCHBAR) ---
+MCHBAR reg = 0x00000000FEDC0001
+MMIO 0x59A0 PKG_RAPL_LIMIT = 0x0042816000DD80A0
+    PL1 (MMIO): 20.000 W  enable=1 clamp=1  janela=28.000 s
+    PL2 (MMIO): 44.000 W  enable=1 clamp=0  janela=0.002 s
+    Lock (bit63) = 0
+
+--- Termico ---
+MSR 0x1A2 TEMPERATURE_TARGET = 0x0000000086640000
+    TjMax = 100 C   offset = 6 C   => TCC ativa em 94 C
+    Lock TCC offset (bit31) = 1
+
+--- Turbo / HWP ---
+MSR 0x1AD TURBO_RATIO_LIMIT = 0x292929292929292F
+MSR 0x1AE TURBO_RATIO_LIMIT_CORES = 0x0807060504030201
+MSR 0x770 PM_ENABLE (HWP) = 0x0000000000000000
+MSR 0x64F CORE_PERF_LIMIT_REASONS = 0x0000000000000000
+
+--- Tensoes (OC mailbox, leitura) ---
+    (offset em mV; requer OC Lock=0 para ALTERAR, leitura costuma funcionar)
+    plano 0 (IA / P-cores): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 1 (GT / iGPU): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 2 (Ring / cache / E-cores): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 3 (System Agent): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+    plano 4 (Analog I/O): resp=0x0000000000000000  max_ratio=0  offset=0.000 mV
+
+==== fim ====
+CpuSetup:0x10E=0x01
+CpuSetup:0x1D9=0x00
+CpuSetup:0x43=0x00
+CpuSetup:0x30=0x00
+CpuSetup:0x13=0x01
+CpuSetup:0x16=0x01
+CpuSetup:0x17(4)=0x00004E20
+CpuSetup:0x1B=0x01
+CpuSetup:0x1C=0x1C
+CpuSetup:0x1D=0x01
+CpuSetup:0x1E(4)=0x00000000
+CpuSetup:0x5B(4)=0x00004E20
+CpuSetup:0x5F(4)=0x0000ABE0
+CpuSetup:0x44=0x00
+CpuSetup:0x45=0x00
+CpuSetup:0x227=0x01
+CpuSetup:0x22=0x01
+CpuSetup:0x23(4)=0x0000CB20
+CpuSetup:0x29=0x01
+CpuSetup:0x2A=0x01
+CpuSetup:0x2B(4)=0x0001E078
+CpuSetup:0x31=0x00
+CpuSetup:0x37=0x00
+CpuSetup:0x7F=0x06
+CpuSetup:0x1E0(2)=0x0000
+CpuSetup:0x1E2=0x00
+CpuSetup:0x315(2)=0x0000
+CpuSetup:0x31D=0x00
+CpuSetup:0x334=0x01
+CpuSetup:0x335=0x01
+CpuSetup:0x2E3=0x01
+Setup:0x6D2=0x01
+--- Estado do DTT
+
+FriendlyName                                                  Status 
+------------                                                  ------ 
+Intel(R) Innovation Platform Framework Generic Participant    Error  
+Intel(R) Innovation Platform Framework Generic Participant    Error  
+Intel(R) Innovation Platform Framework Processor Participant  Error  
+Intel(R) Innovation Platform Framework Manager                Error  
+Intel(R) Dynamic Tuning Technology Device Extension Component Unknown
+
+Name     Status StartType
+----     ------ ---------
+dptftcs Stopped  Disabled
+ipfsvc  Stopped  Disabled
+Tomada: True
+Modo Samsung (3=Alto desempenho,2=Otimizado): 3
+--- Limites logo apos boot (BIOS: 20/44 esperado se nada reescreveu)
+15:51:48 {'PL1 (Static)': 20.0, 'PL1 (Dynamic)': 20.0, 'PL2 (Static)': 44.0, 'PL2 (Dynamic)': 44.0}
+15:51:50 {'PL1 (Static)': 20.0, 'PL1 (Dynamic)': 20.0, 'PL2 (Static)': 44.0, 'PL2 (Dynamic)': 44.0}
+15:51:52 {'PL1 (Static)': 20.0, 'PL1 (Dynamic)': 20.0, 'PL2 (Static)': 44.0, 'PL2 (Dynamic)': 44.0}
+15:51:54 {'PL1 (Static)': 20.0, 'PL1 (Dynamic)': 20.0, 'PL2 (Static)': 44.0, 'PL2 (Dynamic)': 44.0}
+15:51:56 {'PL1 (Static)': 20.0, 'PL1 (Dynamic)': 20.0, 'PL2 (Static)': 44.0, 'PL2 (Dynamic)': 44.0}
+
+=== Plano desempenho ativo 11/04/2026 15:51:59
+--- Multi-core 300 s
+    0s idle   14.9W  92C max 71C clk  527 P0 4090 E 3491 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0    0.0GF
+   15s carga  17.8W  74C max 81C clk 1156 P0 4090 E 1696 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 1   85.9GF
+   30s carga  19.5W  78C max 77C clk 1146 P0 2793 E 2195 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 1   85.9GF
+   45s carga  19.4W  79C max 76C clk 1169 P0 2195 E 1696 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 1   85.9GF
+   60s carga  19.5W  79C max 81C clk 1197 P0 2793 E 2195 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 1   85.9GF
+   75s carga  19.0W  87C max 87C clk 1186 P0 3491 E 2693 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 1   85.9GF
+   90s carga  19.2W  83C max 78C clk 1167 P0 2793 E 2195 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 1   85.9GF
+  105s carga  20.3W  83C max 86C clk 1151 P0 2793 E 2294 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 1  103.1GF
+  120s carga  19.5W  78C max 91C clk 1172 P0 4090 E 2693 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 1  103.1GF
+  135s carga  20.3W  83C max 82C clk 1189 P0 2793 E 2195 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 1  103.1GF
+  151s carga  19.9W  81C max 86C clk 1197 P0 2793 E 2294 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 1  103.1GF
+  166s carga  20.2W  83C max 88C clk 1271 P0 2195 E 1596 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 1   68.7GF
+  181s carga  20.0W  83C max 84C clk 1183 P0 2793 E 2195 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 1  103.1GF
+  196s carga  19.5W  83C max 84C clk 1145 P0 2793 E 2195 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 1   85.9GF
+  211s carga  19.9W  81C max 88C clk 1179 P0 3491 E 3191 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 1   85.9GF
+  226s carga  20.9W  86C max 88C clk 1184 P0 3092 E 2394 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 1 rPL2 1   85.9GF
+  241s carga  20.2W  84C max 86C clk 1123 P0 2993 E 2294 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 1 rPL2 0   85.9GF
+  256s carga  20.0W  87C max 90C clk 1137 P0 2993 E 2394 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 1 rPL2 0  103.1GF
+  271s carga  20.2W  81C max 88C clk 1207 P0 2793 E 2195 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 1 rPL2 0   85.9GF
+  285s carga  20.0W  86C max 84C clk 1268 P0 2993 E 2294 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 1 rPL2 0  103.1GF
+  300s carga  20.0W  83C max 86C clk 1179 P0 2993 E 2294 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 1 rPL2 0  103.1GF
+  315s resfr  10.9W  81C max 81C clk  199 P0 4689 E 3491 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 1    0.0GF
+  330s resfr  11.4W  66C max 67C clk  186 P0 4689 E 3491 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0    0.0GF
+  345s resfr  11.0W  68C max 71C clk  201 P0 4090 E 3491 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0    0.0GF
+  360s resfr  11.9W  64C max 95C clk  248 P0 4090 E 3292 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0    0.0GF
+== RESUMO
+30s iniciais: 18.8 W, 77 C, clk 1108 MHz
+90s finais  : 20.0 W, 85 C (max 96), clk 1175 MHz, GFLOPS 92.7
+PL1 dinamico min/max na carga: 20/20
+--- Single-thread 90 s
+    0s idle   12.0W  65C max 63C clk  189 P0 4689 E 3491 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0    0.0GF
+   15s carga  15.0W  65C max 68C clk  266 P0 4689 E 3491 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0    0.0GF
+   30s carga  18.4W  70C max 72C clk  372 P0 4689 E 3491 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0   17.2GF
+   45s carga  16.8W  73C max 75C clk  278 P0 4589 E 3491 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0   17.2GF
+   60s carga  16.5W  83C max 79C clk  376 P0 4689 E 3491 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0    0.0GF
+   75s carga  18.2W  87C max 87C clk  435 P0 4090 E 3491 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0   34.4GF
+   90s carga  13.6W  88C max 86C clk  267 P0 4689 E 3491 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+  105s resfr   7.5W  67C max 63C clk  373 P0 1696 E 1197 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+  120s resfr  11.5W  67C max 61C clk  575 P0 1696 E 1197 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 1    0.0GF
+== RESUMO
+30s iniciais: 17.5 W, 74 C, clk 376 MHz
+90s finais  : 16.8 W, 77 C (max 96), clk 387 MHz, GFLOPS 16.4
+PL1 dinamico min/max na carga: 20/20
+
+=== Plano equilibrado ativo 11/04/2026 16:00:52
+--- Multi-core 300 s
+    0s idle    7.4W  57C max 63C clk  419 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+   15s carga   8.3W  63C max 61C clk  579 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+   30s carga  20.1W  84C max 84C clk 1955 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+   45s carga  20.2W  86C max 87C clk 1958 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+   60s carga  20.2W  88C max 86C clk 1950 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+   75s carga  20.4W  88C max 90C clk 1952 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+   90s carga  20.5W  91C max 87C clk 1963 P0 2294 E 1496 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  120.3GF
+  105s carga  20.4W  88C max 88C clk 1984 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+  120s carga  20.1W  90C max 88C clk 1913 P0 2295 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 1 rPL2 0  103.1GF
+  135s carga  20.0W  88C max 88C clk 1917 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 1 rPL2 0  103.1GF
+  150s carga  19.8W  88C max 90C clk 1959 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 1 rPL2 0  103.1GF
+  165s carga  20.5W  90C max 88C clk 1948 P0 2294 E 1795 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 1 rPL2 0   68.7GF
+  180s carga  20.5W  81C max 88C clk 1962 P0 2294 E 1496 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+  195s carga  20.8W  87C max 90C clk 1949 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+  210s carga  20.4W  90C max 90C clk 1953 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+  225s carga  17.9W  78C max 79C clk 1384 P0 1696 E 1197 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  103.1GF
+  240s carga  20.5W  90C max 91C clk 1946 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr1 rPL1 0 rPL2 0  120.3GF
+  256s carga  20.4W  90C max 90C clk 1977 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  120.3GF
+  271s carga  20.5W  90C max 90C clk 1951 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  120.3GF
+  286s carga  20.1W  90C max 88C clk 1964 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  120.3GF
+  301s carga  20.1W  88C max 90C clk 1942 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0  120.3GF
+  316s resfr  12.9W  67C max 63C clk  226 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+  331s resfr   4.8W  60C max 55C clk  110 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+  346s resfr   4.7W  57C max 49C clk  214 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+  361s resfr   4.5W  56C max 49C clk  132 P0 1397 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+== RESUMO
+30s iniciais: 17.1 W, 77 C, clk 1601 MHz
+90s finais  : 19.4 W, 87 C (max 92), clk 1856 MHz, GFLOPS 103.8
+PL1 dinamico min/max na carga: 20/20
+--- Single-thread 90 s
+    0s idle    4.5W  56C max 50C clk  141 P0 2195 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+   15s carga   7.1W  54C max 54C clk  251 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0   17.2GF
+   30s carga   7.2W  54C max 52C clk  336 P0 1397 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0   17.2GF
+   45s carga   7.3W  54C max 54C clk  130 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+   60s carga   7.3W  57C max 54C clk  538 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0   17.2GF
+   75s carga   7.4W  54C max 52C clk  440 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0   17.2GF
+   90s carga   7.1W  53C max 54C clk  379 P0 2294 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0   17.2GF
+  105s resfr   5.1W  55C max 51C clk  223 P0 1397 E 1796 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+  120s resfr   5.5W  53C max 48C clk  164 P0 1397 E 1496 PL1 s20/d20 PL2 s44/d44 thr0 rPL1 0 rPL2 0    0.0GF
+== RESUMO
+30s iniciais: 6.8 W, 54 C, clk 253 MHz
+90s finais  : 7.2 W, 55 C (max 58), clk 340 MHz, GFLOPS 14.9
+PL1 dinamico min/max na carga: 20/20
+
+--- Limites ao final
+16:09:44 {'PL1 (Static)': 20.0, 'PL1 (Dynamic)': 20.0, 'PL2 (Static)': 44.0, 'PL2 (Dynamic)': 44.0}
+16:09:46 {'PL1 (Static)': 20.0, 'PL1 (Dynamic)': 20.0, 'PL2 (Static)': 44.0, 'PL2 (Dynamic)': 44.0}
+16:09:48 {'PL1 (Static)': 20.0, 'PL1 (Dynamic)': 20.0, 'PL2 (Static)': 44.0, 'PL2 (Dynamic)': 44.0}
+FIM: 11/04/2026 16:09:50
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20261104160952
+**********************

@@ -1,0 +1,96 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104165806
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\14_etapa2b_uv_log.txt
+Inicio: 11/04/2026 16:58:07
+--- Logs da gravacao da Etapa 2a (UEFI Shell)
+
+
+== e2a_antes.txt
+CpuSetup:0x1D9=0x00
+CpuSetup:0x347(2)=0x0004
+CpuSetup:0x346=0x00
+CpuSetup:0x34A(2)=0x0004
+CpuSetup:0x349=0x00
+CpuSetup:0x187(2)=0x0140
+CpuSetup:0x189(2)=0x00A0
+CpuSetup:0x1E0(2)=0x0000
+CpuSetup:0x1E2=0x00
+CpuSetup:0x10E=0x00
+== e2a_depois.txt
+CpuSetup:0x1D9=0x01
+CpuSetup:0x347(2)=0x0140
+CpuSetup:0x346=0x00
+CpuSetup:0x34A(2)=0x00A0
+CpuSetup:0x349=0x00
+CpuSetup:0x187(2)=0x0140
+CpuSetup:0x189(2)=0x00A0
+CpuSetup:0x1E0(2)=0x0000
+CpuSetup:0x1E2=0x00
+CpuSetup:0x10E=0x00
+== e2a_ok.txt
+gravacao concluida
+== e2a_ERRO.txt
+(nao existe)
+--- Hypervisor neste boot: False
+VBS status: 0
+Tomada: True
+
+--- PL apos boot (esperado 25/51)
+17:00:13 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+17:00:15 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+17:00:17 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+--- Referencia 0 mV (120 s)
+    0s idle    4.3W  50C max 44C clk   73 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+   15s carga  19.9W  70C max 70C clk 1829 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0  137.4GF
+Traceback (most recent call last):
+  File "D:\BIOS_Otimizacao\testes\scripts\stress_log.py", line 33, in <module>
+    d=read(); g=(work[0]-lw)*2*2048**3/1e9; lw=work[0]
+      ^^^^^^
+  File "D:\BIOS_Otimizacao\testes\scripts\stress_log.py", line 15, in read
+    for s,l,u,v,*_ in hwsm.snap():
+                      ^^^^^^^^^^^
+  File "D:\BIOS_Otimizacao\testes\scripts\hwsm.py", line 7, in snap
+    m=mmap.mmap(-1,tot,SM,access=mmap.ACCESS_READ); b=m[:]; m.close()
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 87] Parâmetro incorreto
+--- FIVR com ThrottleStop em 0 mV (deve mostrar leitura, nao 'Not Available')
+0 mV -> 0x00000000
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\BIOS_Otimizacao\testes\scripts\hwsm.py", line 7, in snap
+    m=mmap.mmap(-1,tot,SM,access=mmap.ACCESS_READ); b=m[:]; m.close()
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 87] Parâmetro incorreto
+=== Passo -50 mV  11/04/2026 17:00:58
+-50 mV -> 0xF9A00000
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "D:\BIOS_Otimizacao\testes\scripts\hwsm.py", line 7, in snap
+    m=mmap.mmap(-1,tot,SM,access=mmap.ACCESS_READ); b=m[:]; m.close()
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 87] Parâmetro incorreto
+NAO APLICOU: IA offset lido = 0 mV (esperado -50)
+Ultimo passo estavel (120 s FMA): 0 mV
+FIM: maior offset estavel no teste curto = 0 mV  11/04/2026 17:01:18
+0 mV -> 0x00000000
+A operação foi concluída com êxito.
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20261104170124
+**********************

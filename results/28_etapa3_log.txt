@@ -1,0 +1,122 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104194942
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\28_etapa3_log.txt
+Inicio: 11/04/2026 19:49:43
+--- Logs da gravacao (UEFI Shell)
+
+
+== e3_antes.txt
+Setup:0xC4F=0x02
+Setup:0xC50(4)=0x000007D0
+CpuSetup:0x1D5=0x01
+CpuSetup:0x12E=0x01
+CpuSetup:0x134(2)=0x0140
+CpuSetup:0x13E(2)=0x0140
+CpuSetup:0x132(2)=0x008C
+CpuSetup:0x13C(2)=0x0118
+== e3_depois.txt
+Setup:0xC4F=0x02
+Setup:0xC50(4)=0x00000000
+CpuSetup:0x1D5=0x00
+CpuSetup:0x12E=0x01
+CpuSetup:0x134(2)=0x00C8
+CpuSetup:0x13E(2)=0x0140
+CpuSetup:0x132(2)=0x008C
+CpuSetup:0x13C(2)=0x0118
+== e3_ok.txt
+gravacao concluida
+== e3_ERRO.txt
+(nao existe)
+--- Hypervisor: True  Tomada: True
+--- PL (esperado 25/51)
+19:51:49 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+19:51:51 {'PL1 (Static)': 25.0, 'PL1 (Dynamic)': 25.0, 'PL2 (Static)': 51.0, 'PL2 (Dynamic)': 51.0}
+=== Fase desempenho_single  11/04/2026 19:51:53
+
+    0s idle    8.3W  52C max 47C clk  190 P0 1197 E  898 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+   15s carga  13.2W  68C max 68C clk  819 P0 4090 E 3491 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1   17.2GF
+   30s carga  13.0W  81C max 68C clk  315 P0 4091 E 3492 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 0   17.2GF
+   45s carga  12.8W  68C max 78C clk  195 P0 4090 E 3491 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 0   34.4GF
+   60s carga  14.0W  71C max 72C clk  199 P0 4090 E 3491 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   17.2GF
+   75s carga  12.5W  91C max 92C clk  379 P0 4689 E 3491 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 0   34.4GF
+   90s carga  13.1W  75C max 83C clk  292 P0 4589 E 3491 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 0   34.4GF
+  105s carga  14.7W  69C max 70C clk  427 P0 4090 E 3491 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 0   34.4GF
+  120s carga  22.2W  64C max 63C clk  956 P0 1696 E 1197 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 1    0.0GF
+  135s resfr   6.8W  64C max 56C clk  128 P0 4090 E 3491 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 0    0.0GF
+  150s resfr   9.6W  64C max 66C clk  245 P0 4689 E 3491 PL1 s25/d25 PL2 s51/d51 thr1 rPL1 0 rPL2 0    0.0GF
+== RESUMO
+30s iniciais: 14.1 W, 72 C, clk 370 MHz
+90s finais  : 15.0 W, 79 C (max 96), clk 446 MHz, GFLOPS 23.5
+PL1 dinamico min/max na carga: 25/25
+=== Fase equilibrado_multi  11/04/2026 19:54:34
+
+    0s idle    7.7W  59C max 54C clk  216 P0 1796 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+   15s carga  14.0W  60C max 63C clk  957 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+   30s carga  12.2W  69C max 70C clk 1041 P0 2294 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+   45s carga  11.6W  62C max 63C clk  735 P0 2294 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+   60s carga  11.4W  62C max 63C clk  726 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+   75s carga  11.5W  63C max 64C clk  758 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+   90s carga  11.6W  65C max 68C clk  803 P0 2294 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   51.5GF
+  105s carga  11.6W  63C max 63C clk  728 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   51.5GF
+  120s carga  11.4W  62C max 63C clk  782 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  135s carga  11.4W  63C max 63C clk  739 P0 1097 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  150s carga  11.4W  69C max 69C clk 1107 P0 2294 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   51.5GF
+  165s carga  11.3W  62C max 61C clk  785 P0 2294 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  181s carga  11.6W  63C max 63C clk  728 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  196s carga  11.7W  62C max 64C clk  753 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  211s carga  12.4W  70C max 73C clk 1398 P0 2294 E 1796 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  226s carga  11.9W  64C max 64C clk  768 P0 2294 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  241s carga  11.6W  63C max 63C clk  785 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  256s carga  11.5W  64C max 63C clk  748 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  271s carga  14.1W  61C max 63C clk 1024 P0 2294 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  286s carga  11.9W  63C max 63C clk  752 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  301s carga  11.7W  65C max 64C clk  921 P0 1197 E 1496 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0   68.7GF
+  316s resfr   5.7W  57C max 53C clk   78 P0  998 E 1097 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+  330s resfr   8.7W  56C max 50C clk  127 P0  798 E  798 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+  345s resfr   4.4W  53C max 47C clk   28 P0  798 E  898 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+  360s resfr   4.7W  53C max 46C clk   23 P0 1097 E 1097 PL1 s25/d25 PL2 s51/d51 thr0 rPL1 0 rPL2 0    0.0GF
+== RESUMO
+30s iniciais: 11.6 W, 62 C, clk 846 MHz
+90s finais  : 12.2 W, 64 C (max 75), clk 870 MHz, GFLOPS 64.9
+PL1 dinamico min/max na carga: 25/25
+=== Fase gpu (WebGL 1500 it, Equilibrado; comparar com 27_base_gpu_e2e)  11/04/2026 20:00:45
+
+   0s                    iGPU   4.5W GT   0.0W VID 0.225   300MHz uso    0% pkg   5.1W  53C
+  15s GPU 24.00 fps      iGPU  23.7W GT  16.2W VID 0.397  1250MHz uso   96% pkg  23.8W  94C
+  30s GPU 23.61 fps      iGPU  20.4W GT  14.9W VID 0.385  1200MHz uso   94% pkg  20.4W  94C
+  45s GPU 23.21 fps      iGPU  22.1W GT  14.2W VID 0.370  1150MHz uso   97% pkg  22.2W  76C
+  60s GPU 23.21 fps      iGPU  20.5W GT  14.0W VID 0.397  1250MHz uso   95% pkg  20.5W  93C
+  75s GPU 22.62 fps      iGPU  22.0W GT  13.9W VID 0.382  1200MHz uso   98% pkg  21.8W  94C
+  90s GPU 22.62 fps      iGPU  19.4W GT  13.7W VID 0.370  1150MHz uso   96% pkg  19.3W  96C
+ 105s GPU 23.81 fps      iGPU  20.7W GT  13.4W VID 0.397  1250MHz uso   97% pkg  20.8W  94C
+ 120s GPU 24.00 fps      iGPU  21.6W GT  13.4W VID 0.382  1200MHz uso   97% pkg  21.6W  93C
+ 135s GPU 24.00 fps      iGPU  22.1W GT  13.6W VID 0.382  1200MHz uso   97% pkg  22.2W  96C
+ 150s GPU 24.59 fps      iGPU  18.8W GT  13.5W VID 0.382  1200MHz uso   97% pkg  18.8W  93C
+ 165s GPU 23.00 fps      iGPU  20.5W GT  13.5W VID 0.397  1250MHz uso   97% pkg  20.8W  94C
+ 180s GPU 23.61 fps      iGPU  21.0W GT  13.7W VID 0.397  1250MHz uso   97% pkg  21.0W  94C
+== RESUMO GPU
+amostras 180/180  FPS medio 23.42  iGPU 20.73 W  GT 13.93 W  VID 0.3830 V  clk 1201 MHz  uso 96%  pkg 20.6 W  93 C
+contexto perdido (TDR): False
+--- WHEA desde o boot:
+--- Driver de video reiniciado (Display 4101 / LiveKernelEvent 141) desde o boot:
+FIM: todas as fases concluidas (Etapa 3)  11/04/2026 20:04:01
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20261104200405
+**********************

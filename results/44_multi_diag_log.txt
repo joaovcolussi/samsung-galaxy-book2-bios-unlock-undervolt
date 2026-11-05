@@ -1,0 +1,47 @@
+**********************
+Início da transcrição do Windows PowerShell
+Hora de início: 20261104213407
+Nome de Usuário: <removido>
+Executar como Usuário: <removido>
+Nome da Configuração: <removido>
+Computador: <removido>
+Aplicativo Host: <removido>
+ID do Processo: <removido>
+PSVersion: 5.1.26100.9711
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9711
+BuildVersion: 10.0.26100.9711
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcrição iniciada, o arquivo de saída é D:\BIOS_Otimizacao\testes\44_multi_diag_log.txt
+Inicio 11/04/2026 21:34:07
+
+
+--- top processos (nucleos) a cada 20 s:
+21:34:43 System=0.07 HWiNFO64=0.04 powershell=0.04 WmiPrvSE=0.03
+21:35:07 System=0.06 HWiNFO64=0.05 powershell=0.03 esrv_svc=0.02
+21:35:29 SamsungSettingsHost=0.45 System=0.32 svchost=0.14 dwm=0.11
+21:35:52 System=0.09 conhost=0.07 claude=0.06 HWiNFO64=0.05
+21:36:15 System=0.3 MsMpEng=0.17 claude=0.16 dwm=0.05
+21:36:38 powershell=1.45 System=0.36 MsMpEng=0.3 conhost=0.05
+21:37:01 System=0.59 claude=0.06 conhost=0.04 dwm=0.04
+21:37:24 MsMpEng=0.34 claude=0.21 System=0.11 esrv_svc=0.09
+21:37:47 System=0.3 claude=0.16 conhost=0.05 MsMpEng=0.05
+21:38:10 System=0.08 claude=0.05 esrv_svc=0.05 esrv=0.03
+21:38:33 System=0.21 esrv_svc=0.05 svchost=0.02 conhost=0.02
+21:38:55 System=0.09 HWiNFO64=0.06 svchost=0.02 esrv=0.02
+21:39:18 System=0.09 explorer=0.06 HWiNFO64=0.04 powershell=0.03
+21:39:41 HWiNFO64=0.05 svchost=0.02 esrv_svc=0.02 System=0.02
+21:40:03 System=0.22 HWiNFO64=0.05 powershell=0.02 SearchIndexer=0.02
+21:40:26 HWiNFO64=0.08 WmiPrvSE=0.02 explorer=0.02 claude=0.02
+21:40:48 HWiNFO64=0.07 System=0.03 PresentMonService=0.02 svchost=0.01
+21:41:10 HWiNFO64=0.06 System=0.05 claude=0.02 svchost=0.01
+21:41:32 HWiNFO64=0.04 System=0.03 svchost=0.02 claude=0.02
+FIM 11/04/2026 21:41:33
+**********************
+Fim da transcrição do Windows PowerShell
+Hora de término: 20261104214133
+**********************
